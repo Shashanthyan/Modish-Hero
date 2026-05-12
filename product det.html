@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modish Hero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index3.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font for classy serif look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "bodoni moda";
+        }   
+
+        .hero {
+            height: 100px;
+            background: url('img/video.jpg')center/cover no-repeat ;
+            height: 700px;
+            color: white;
+            position: relative; 
+        }
+
+        .navbar-custom {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color:#111111;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .nav-center a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .hero-content {
+            height: 100%;
+        }
+
+        .hero h1 {
+            font-size: 90PX;
+            font-weight:lighter;
+            letter-spacing: 3px;
+            padding-left:230px;
+            }
+
+        .btn {
+            color: rgb(255, 255, 255);
+            border: none;
+            font-size: 25px;
+            letter-spacing: 2px;
+            padding-left: 550px;
+           
+        }
+       
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-custom px-4">
+    <div class="container-fluid">
+
+    
+        <div class="logo text-white">modish.</div>
+        <div class="mx-auto d-none d-lg-flex nav-center">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="product.html">PRODUCT</a>
+        </div>
+
+        <div class="icons">
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="#">SEARCH</a>
+            <a href="wishlist.html">LIKE(0)</a>
+            <a href="cart.html"> CART  (0)</a>
+         
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content d-flex align-items-center ">
+        <div class="row">
+            <div class="col">
+                <h1>SINGLE PRODUCT</h1>
+                <button class="btn">Home/Page/Shop</button>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br>
+
+<body>
+
+<div class="container my-6">
+    <div class="row">
+
+        <!-- Left Thumbnails -->
+        <div class="col-md-1 d-flex flex-column gap-3">
+            <img src="img/item2.jpg" class="thumb-img">
+            <img src="img/item3.jpg" class="thumb-img">
+            <img src="img/item5.jpg" class="thumb-img">
+            <img src="img/item4.jpg" class="thumb-img">
+        </div>
+
+        <!-- Main Image -->
+        <div class="col-md-5">
+            <img src="img/item1.jpg" class="main-img">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+
+            <h1 class="title">BLACK SUNGLASSES</h1><br>
+
+            <div class="rating mb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>(5.0)</span>
+            </div>
+
+            <div class="price mb-3">
+                <span class="new-price">$170.00</span>
+                <span class="old-price">$240.00</span>
+            </div>
+
+            <p class="desc">
+                Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit sed quam semper rhoncus. Diam ultrices maecenas consequat eu tortor orci, cras lectus mauris, cras egestas quam venenatis neque.
+            </p>
+
+            <!-- Color -->
+            <h6 class="section-title">COLOR:</h6>
+            <div class="d-flex gap-3 mb-3">
+                <button class="option-btn active">GRAY</button>
+                <button class="option-btn">BLACK</button>
+                <button class="option-btn">BLUE</button>
+                <button class="option-btn">RED</button>
+            </div>
+
+            <!-- Size -->
+            <h6 class="section-title">SIZE:</h6>
+            <div class="d-flex gap-3 mb-2">
+                <button class="option-btn">XL</button>
+                <button class="option-btn active">L</button>
+                <button class="option-btn">M</button>
+                <button class="option-btn">S</button>
+            </div>
+
+            <p class="stock">2 in stock</p>
+
+            <!-- Quantity and Cart -->
+            <div class="d-flex align-items-center gap-3 my-3">
+                <div class="qty-box">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+
+                <button class="cart-btn">Add To Cart</button>
+                <button class="wish-btn"><i class="fa fa-heart"></i></button>
+            </div>
+
+            <!-- Extra Info -->
+            <p><strong>SKU:</strong> 123</p>
+            <p><strong>CATEGORY:</strong> Black, Sunglasses</p>
+            <p><strong>TAGS:</strong> Eyewear, Metal</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Tabs Section -->
+<div class="container my-5">
+
+    <!-- Nav Tabs -->
+    <ul class="nav justify-content-center product-tabs">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#details">DETAILS</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#how">HOW TO USE</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ship">SHIPPING & RETURN</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">REVIEWS</button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-5">
+
+        <!-- DETAILS -->
+        <div class="tab-pane fade show active" id="details">
+            <h3 class="desc-title">PRODUCT DESCRIPTION</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio.
+                Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+                Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+            </p>
+
+            <ul>
+                <li>Donec nec justo eget felis facilisis fermentum.</li>
+                <li>Suspendisse urna viverra non, semper suscipit pede.</li>
+                <li>Aliquam porttitor mauris sit amet orci.</li>
+            </ul>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio.
+                Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+                Suspendisse urna viverra non, semper suscipit, posuere a, pede.
+            </p>
+        </div>
+
+        <!-- HOW TO USE -->
+        <div class="tab-pane fade" id="how">
+            <h3 class="desc-title">HOW TO USE</h3>
+            <p>Instructions about how to use the product.</p>
+        </div>
+
+        <!-- SHIPPING -->
+        <div class="tab-pane fade" id="ship">
+            <h3 class="desc-title">SHIPPING & RETURN</h3>
+            <p>Shipping and return policies go here.</p>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="tab-pane fade" id="reviews">
+            <h3 class="desc-title">REVIEWS</h3>
+            <p>Customer reviews will be displayed here.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- ================= SUBSCRIBE ================= -->
+
+  <section class="subscribe-section">
+
+    <div class="container">
+
+      <h1 class="big-text">Subscribe Us</h1>
+
+      <div class="subscribe-box">
+
+        <input
+          type="email"
+          placeholder="Write your email address here..."
+        >
+
+        <button>
+          Subscribe
+        </button>
+
+      </div>
+
+    </div>
+
+  </section><br><br><br>
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="row justify-content-between">
+
+        <!-- Logo -->
+        <div class="col-lg-3 footer-column">
+          <h1 class="footer-logo">modish.</h1>
+        </div>
+
+        <!-- Links 1 -->
+        <div class="col-lg-2 col-md-4 footer-column">
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Articles</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div class="col-lg-2 col-md-4 footer-column">
+          <ul class="footer-links">
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="col-lg-2 col-md-4 footer-column">
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 footer-column">
+
+          <div class="contact-text">
+            Do you have any queries?<br>
+
+            <a href="mailto:templatesjungle@gmail.com">
+              templatesjungle@gmail.com
+            </a>
+
+            <br><br>
+
+            If you need support? Give us a call.
+          </div>
+
+          <div class="phone">
+            +12 23 34 456 678
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="copyright">
+      © 2024 Modish. All rights reserved by
+      <a href="#">TemplatesJungle</a>
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
+
+
+
+
